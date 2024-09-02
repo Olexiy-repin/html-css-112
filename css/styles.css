@@ -1,0 +1,128 @@
+/* 
+Універсальний селектор
+Селектор тега
+Селектор по id
+Селектор класа
+Селектор нащадка
+Дочірній селектор
+*/
+
+/* 
+Універсальний селектор
+*/
+
+/* 
+* {
+  box-sizing: border-box;
+} 
+*/
+
+/* Селектор тега */
+
+/* 
+ul,
+ol {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+*/
+
+/* Селектор по id */
+
+/* #title {
+  color: teal;
+}
+
+#first-description,
+#second-description {
+  color: yellowgreen;
+} */
+
+/* Селектор класа */
+/* .main-title {
+  color: teal;
+}
+
+.description {
+  color: tomato;
+} */
+
+/* Селектор нащадка */
+.menu-link {
+  font-size: 20px;
+}
+
+.page-header .menu-link {
+  color: teal;
+}
+
+.page-footer .menu-link {
+  color: tomato;
+}
+
+/* Дочірній селектор */
+/* .list-item {
+  font-size: 20px;
+  color: teal;
+}
+
+.list > .list-item {
+  color: tomato;
+} */
+
+/* Каскадність */
+
+/* .main-title {
+  font-size: 18px;
+}
+
+@media (min-width: 768px) {
+  .main-title {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-title {
+    font-size: 28px;
+  }
+} */
+
+/* Cпецифічність */
+
+/* 10 */
+/* .main-title {
+  color: teal;
+} */
+
+/* 1 */
+/* h1 {
+  color: tomato !important;
+} */
+
+/* 100 */
+/* #title {
+  color: yellowgreen;
+} */
+
+/* 11 */
+/* body .main-title {
+  color: aquamarine;
+} */
+
+/* Наслідування */
+
+/* .main-title {
+  color: yellowgreen;
+}
+
+body {
+  color: teal;
+}
+
+a {
+  color: inherit;
+} */
