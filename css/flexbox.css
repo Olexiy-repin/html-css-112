@@ -41,11 +41,21 @@ ol {
 }
 
 .benefits-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-wrap: wrap;
+
+  /* row-gap: 40px;
+  column-gap: 20px; */
+  /* gap: 40px 20px; */
+
   border: 1px solid #000000;
 }
 
 .benefits-list-item {
-  width: 308px;
+  flex-basis: 308px;
 
   padding: 20px;
   border: 1px solid tomato;
@@ -54,4 +64,16 @@ ol {
 .benefits-list-title {
   font-size: 20px;
   margin-bottom: 20px;
+}
+
+.benefits-list-item-first {
+  order: 30;
+}
+
+.benefits-list-item-second {
+  order: 0;
+}
+
+.benefits-list-item-third {
+  order: -20;
 }
