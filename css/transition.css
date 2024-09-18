@@ -19,9 +19,18 @@
   color: #ffffff;
 
   background-color: #2980b9;
+
+  /* transition-property: background-color;
+  transition-duration: 1000ms;
+  transition-timing-function: linear;
+  transition-delay: 0ms; */
+
+  transition: background-color 500ms linear, color 500ms linear;
 }
 
 .btn:hover,
 .btn:focus {
+  display: flex;
   background-color: #e74c3c;
+  color: #000000;
 }
