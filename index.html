@@ -431,9 +431,117 @@
               </li>
             </ul>
           </nav>
+          <form class="subscribe-form">
+            <input
+              class="subscribe-form-input"
+              type="email"
+              name="user-subscribe-email"
+              placeholder="Enter your email"
+              required
+            />
+            <button class="subscribe-form-submit" type="submit">
+              Subscribe
+            </button>
+          </form>
         </div>
       </div>
     </footer>
+
+    <div class="modal-backdrop">
+      <div class="modal">
+        <button class="modal-close-btn" type="button">
+          <svg class="modal-close-icon" width="28" height="28">
+            <use href="./images/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+        <p class="modal-slogan">
+          leave a review about <span class="accent-color">our chocolate</span>
+        </p>
+        <form class="review-form">
+          <div class="review-form-field-wrapper">
+            <label class="review-form-field-label" for="user-name">Name</label>
+            <div class="review-form-input-wrapper">
+              <input
+                class="review-form-input"
+                id="user-name"
+                name="user-name"
+                type="text"
+                required
+              />
+              <svg class="review-form-input-icon" width="24" height="24">
+                <use href="./images/sprite.svg#icon-user"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="review-form-field-wrapper">
+            <label class="review-form-field-label" for="user-email">
+              Email
+            </label>
+            <div class="review-form-input-wrapper">
+              <input
+                class="review-form-input"
+                id="user-email"
+                name="user-email"
+                type="email"
+              />
+              <svg class="review-form-input-icon" width="24" height="24">
+                <use href="./images/sprite.svg#icon-email"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="review-form-field-wrapper">
+            <label class="review-form-field-label" for="user-phone">
+              Phone number
+            </label>
+            <div class="review-form-input-wrapper">
+              <input
+                class="review-form-input"
+                id="user-phone"
+                name="user-phone"
+                type="tel"
+              />
+              <svg class="review-form-input-icon" width="24" height="24">
+                <use href="./images/sprite.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="review-form-field-wrapper">
+            <label class="review-form-field-label" for="user-comment">
+              Comment
+            </label>
+            <textarea
+              class="review-form-comment"
+              name="user-comment"
+              id="user-comment"
+              placeholder="Enter text"
+              required
+            ></textarea>
+          </div>
+          <div class="review-form-checkbox-wrapper">
+            <input
+              class="review-form-checkbox visually-hidden"
+              id="privacy-policy"
+              type="checkbox"
+              name="privacy-policy"
+              value="true"
+              required
+            />
+            <label class="review-form-checkbox-label" for="privacy-policy">
+              <span class="review-form-custom-checkbox">
+                <svg class="review-form-checkbox-icon" width="10" height="10">
+                  <use href="./images/sprite.svg#icon-checkmark"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a class="review-form-policy-link accent-color" href="">
+                Privacy Policy
+              </a>
+            </label>
+          </div>
+          <button class="review-form-submit-btn" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
 
